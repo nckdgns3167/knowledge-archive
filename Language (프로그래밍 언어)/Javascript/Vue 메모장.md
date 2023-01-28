@@ -45,7 +45,7 @@
 **Vue.config.productionTip = false ?**
 
 - Vue 앱이 처음 실행 될 때 나오는 경고문(배포에 대한 팁)을 출력할지 말지 정하는 것.
-- default는 false
+- default는 false 
 
 ---
 
