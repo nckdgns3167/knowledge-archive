@@ -32,3 +32,28 @@
 
 ---
 
+### 배열 메소드 정리
+
+- 가변 (Mutable)
+
+  > **✅ push(element)**: 배열의 끝에 하나 이상의 요소 추가
+  >
+  > **✅ pop()**: 배열의 마지막 요소 삭제
+  >
+  > ✅ **unshift(element)**: 배열의 맨 앞에 하나 이상의 요소 추가
+  >
+  > ✅ **shift()**: 배열의 맨 앞 요소 삭제
+  >
+  > ✅ **splice(startIndex, deleteCount, element)**: 배열의 기존 요소를 삭제 또는
+
+- 불변 (Immutable)
+
+  >**✅ concat(array 또는 element)**: 인자로 주어진 배열이나 요소들을 기존 배열에 합침
+  >
+  >**✅ slice(startIndex, endIndex)**: startIndex 부터 endIndex-1까지에 대한 얕은 복사본을 반환
+  >
+  >**✅ join(separator)**: 배열의 모든 요소를 연결해 하나의 문자열로 반환
+  >
+  >**✅ map(callback)**: 배열 내의 모든 요소 각각에 대하여 주어진 함수를 호출한 결과를 모아 새로운 배열을 반환한다.
+  >
+  >**✅ filter(separator)**: 주어진 함수의 테스트를 통과하는 모든 요소를 모아 새로운 배열로 반환한다.
