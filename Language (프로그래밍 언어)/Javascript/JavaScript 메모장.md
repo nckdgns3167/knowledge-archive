@@ -57,3 +57,20 @@
   >**✅ map(callback)**: 배열 내의 모든 요소 각각에 대하여 주어진 함수를 호출한 결과를 모아 새로운 배열을 반환한다.
   >
   >**✅ filter(separator)**: 주어진 함수의 테스트를 통과하는 모든 요소를 모아 새로운 배열로 반환한다.
+
+---
+
+### 객체 변경 없이 데이터 수정하기 예제
+
+```javascript
+var player = {score: 1, name: 'Jeff'};
+
+var newPlayer = Object.assign({}, player, {score: 2});
+// 이제 player는 변하지 않았지만 newPlayer는 {score: 2, name: 'Jeff'}입니다.
+
+// 객체 spread 구문을 사용한다면 이렇게 쓸 수 있습니다.
+// var newPlayer = {...player, score: 2};
+```
+
+---
+
