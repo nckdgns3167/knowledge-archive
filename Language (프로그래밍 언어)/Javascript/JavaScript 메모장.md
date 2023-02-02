@@ -48,15 +48,15 @@
 
 - 불변 (Immutable)
 
-  > ✅ concat(array 또는 element)\*\*: 인자로 주어진 배열이나 요소들을 기존 배열에 합침
+  > - ✅ **concat(array 또는 element**): 인자로 주어진 배열이나 요소들을 기존 배열에 합침
   >
-  > ✅ slice(startIndex, endIndex)\*\*: startIndex 부터 endIndex-1까지에 대한 얕은 복사본을 반환
+  > - ✅ **slice(startIndex, endIndex)**: startIndex 부터 endIndex-1까지에 대한 얕은 복사본을 반환
   >
-  > ✅ join(separator)\*\*: 배열의 모든 요소를 연결해 하나의 문자열로 반환
+  > - ✅ **join(separator)**: 배열의 모든 요소를 연결해 하나의 문자열로 반환
   >
-  > ✅ map(callback)\*\*: 배열 내의 모든 요소 각각에 대하여 주어진 함수를 호출한 결과를 모아 새로운 배열을 반환한다.
+  > - ✅ **map(callback)**: 배열 내의 모든 요소 각각에 대하여 주어진 함수를 호출한 결과를 모아 새로운 배열을 반환한다.
   >
-  > ✅ filter(separator)\*\*: 주어진 함수의 테스트를 통과하는 모든 요소를 모아 새로운 배열로 반환한다.
+  > - ✅ **filter(separator)**: 주어진 함수의 테스트를 통과하는 모든 요소를 모아 새로운 배열로 반환한다.
 
 ---
 
@@ -73,3 +73,10 @@ var newPlayer = Object.assign({}, player, { score: 2 });
 ```
 
 ---
+
+### Truthy 와 Falsy
+
+![image](https://user-images.githubusercontent.com/122634701/216356948-d9c99984-01f2-4d51-9f5c-512e63e3b7c1.png)
+
+---
+
