@@ -17,7 +17,7 @@
 
 **화살표 함수**
 
-- 주의할 점 
+- 주의할 점
 
   1. 무조건 익명함수로만 사용할 수 있음
 
@@ -27,8 +27,49 @@
 
 - **this 바인딩**
 
-  - function으로 선언한 함수를 실행할 땐 this가 존재하긴 하지만 지정하지 않는데, **화살표 함수에는 this가 아예 없다.** 
+  - function으로 선언한 함수를 실행할 땐 this가 존재하긴 하지만 지정하지 않는데, **화살표 함수에는 this가 아예 없다.**
   - **JavaScript에서는 어떤 식별자(변수)를 찾을 때 현재 환경에서 그 변수가 없으면 바로 상위 환경을 검색한다.** 그렇게 점점 상위 환경으로 타고 타고 올라가다가 변수를 찾거나 가장 상위 환경에 도달하면 그만둔다. **화살표 함수에는 this라는 변수 자체가 존재하지 않기 때문에 그 상위 환경에서의 this를 참조하게 된다.**
 
 ---
 
+### 배열 메소드 정리
+
+- 가변 (Mutable)
+
+  > ✅ push(element)\*\*: 배열의 끝에 하나 이상의 요소 추가
+  >
+  > ✅ pop()\*\*: 배열의 마지막 요소 삭제
+  >
+  > ✅ **unshift(element)**: 배열의 맨 앞에 하나 이상의 요소 추가
+  >
+  > ✅ **shift()**: 배열의 맨 앞 요소 삭제
+  >
+  > ✅ **splice(startIndex, deleteCount, element)**: 배열의 기존 요소를 삭제 또는
+
+- 불변 (Immutable)
+
+  > ✅ concat(array 또는 element)\*\*: 인자로 주어진 배열이나 요소들을 기존 배열에 합침
+  >
+  > ✅ slice(startIndex, endIndex)\*\*: startIndex 부터 endIndex-1까지에 대한 얕은 복사본을 반환
+  >
+  > ✅ join(separator)\*\*: 배열의 모든 요소를 연결해 하나의 문자열로 반환
+  >
+  > ✅ map(callback)\*\*: 배열 내의 모든 요소 각각에 대하여 주어진 함수를 호출한 결과를 모아 새로운 배열을 반환한다.
+  >
+  > ✅ filter(separator)\*\*: 주어진 함수의 테스트를 통과하는 모든 요소를 모아 새로운 배열로 반환한다.
+
+---
+
+### 객체 변경 없이 데이터 수정하기 예제
+
+```javascript
+var player = { score: 1, name: "Jeff" };
+
+var newPlayer = Object.assign({}, player, { score: 2 });
+// 이제 player는 변하지 않았지만 newPlayer는 {score: 2, name: 'Jeff'}입니다.
+
+// 객체 spread 구문을 사용한다면 이렇게 쓸 수 있습니다.
+// var newPlayer = {...player, score: 2};
+```
+
+---
